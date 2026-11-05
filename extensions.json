@@ -1,0 +1,15 @@
+{
+  // Рекомендуемые расширения для этого проекта
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker-russian",
+    "christian-kohler.path-intellisense",
+    "formulahendry.auto-rename-tag",
+    "mhutchie.git-graph",
+    "eamodio.gitlens"
+  ],
+  "unwantedRecommendations": ["ms-vscode.vscode-typescript-tslint-plugin"]
+}

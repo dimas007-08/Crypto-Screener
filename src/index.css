@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Шрифты */
+  --font-body: "Manrope", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Палитра терминала */
+  --color-ink: #0b0f16;
+  --color-panel: #0d1117;
+  --color-panel2: #161b22;
+  --color-line: #1f2937;
+  --color-mut: #8b98ab;
+  --color-dim: #5d6b80;
+  --color-bull: #00ff88;
+  --color-bear: #ff4466;
+  --color-brand: #2962ff;
+  --color-accent: #00e5ff;
+  --color-gold: #ffd600;
+  --color-violet: #7c5cff;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-ink);
+  color: #e6edf3;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(41, 98, 255, 0.35);
+  color: #fff;
+}
+
+/* ── Скроллбары ──────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f16;
+}
+::-webkit-scrollbar-thumb {
+  background: #223046;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2f4258;
+}
+
+/* Убрать стрелки у number-инпутов */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Слайдеры в тёмной теме */
+input[type="range"] {
+  accent-color: var(--color-brand);
+}
+
+/* Приглушённые рамки терминала. Без этого border наследует светлый цвет текста. */
+.hairline {
+  border-color: rgba(51, 65, 85, 0.58);
+}
